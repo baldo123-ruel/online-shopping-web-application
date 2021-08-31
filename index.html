@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+</head>
+<body>
+    <div class="container">
+         <div class="bg-header">
+              <h2 id="title">Shopping</h2>
+              <form action="" method="get">
+                  <h2 id="title">Shopping</h2>
+                  <input type="text"placeholder="Search items or store" name="" id="">
+                  <button type="submit"><i class="material-icons-outlined">search</i></button>
+                  <span class="material-icons-outlined">shopping_cart</span>
+                  <a href="">Signup</a>
+                  <a href="login.html">Signin</a>
+              </form>
+         </div>
+          
+               <div class="imgani">
+                    
+                    
+                    <span id="cart"class="material-icons-outlined">shopping_cart</span>
+                    
+               </div>
+               
+          
+          <br>
+          
+          <div class="scroll">
+            <h2>Discover</h2>
+          <div class="displaypro">
+                <img src="./image/img4.jpg" alt="">
+                <p>Price : 100$</p>
+          </div>
+          
+          <div class="displaypro">
+                <img src="./image/img8.jpg" alt="">
+                <p>Price : 100$</p>
+         </div>
+  
+          <div class="displaypro">
+                <img src="./image/img4.jpg" alt="">
+                <p>Price : 100$</p>
+         </div>
+         <div class="displaypro">
+            <img src="./image/img8.jpg" alt="">
+            <p>Price : 100$</p>
+     </div>
+
+      <div class="displaypro">
+            <img src="./image/img4.jpg" alt="">
+            <p>Price : 100$</p>
+     </div>
+     <div class="displaypro">
+        <img src="./image/img8.jpg" alt="">
+        <p>Price : 100$</p>
+    </div>
+
+     <div class="displaypro">
+        <img src="./image/img4.jpg" alt="">
+        <p>Price : 100$</p>
+    </div>
+    <div class="displaypro">
+       <img src="./image/img8.jpg" alt="">
+       <p>Price : 100$</p>
+    </div>
+
+    <div class="displaypro">
+       <img src="./image/img4.jpg" alt="">
+       <p>Price : 100$</p>
+    </div>
+    <div class="displaypro">
+       <img src="./image/img8.jpg" alt="">
+       <p>Price : 100$</p>
+    </div>
+
+<div class="displaypro">
+    <img src="./image/img4.jpg" alt="">
+    <p>Price : 100$</p>
+</div>
+         </div>
+   
+         <footer>
+             <div class="box">
+                 <div class="block">
+                   <i id="home"class="material-icons-outlined">home</i>
+                   <a id=""href="">Home</a>
+                </div>
+             </div>
+             <div class="box">
+                <div class="block">
+                  <i id="tags"class="material-icons-outlined">sell</i>
+                  <a id=""href="">Tag</a>
+               </div>
+            </div>
+            <div class="box">
+                <div class="block">
+                  <i id="store"class="material-icons-outlined">store</i>
+                  <a id=""href=""> Store</a>
+               </div>
+            </div>
+            <div class="box">
+                <div class="block">
+                  <i id="person"class="material-icons-outlined">person</i>
+                  <a id=""href="">Me</a>
+               </div>
+            </div>
+            <div class="user">
+                <img src="./image/ruel.jpg" alt="">
+                <p>Owner</p>
+                <i></i>
+            </div>
+         </footer>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+             var i;
+             var x = document.getElementsByClassName("mySlides");
+             for (i = 0; i < x.length; i++){
+                 x[i].style.display = "none";
+             }
+             myIndex++;
+             if (myIndex > x.length) {
+                 myIndex = 1
+             }
+             x[myIndex-1].style.display = "block";
+             setTimeout(carousel,3000);
+        }
+    </script>
+</body>
+</html>
