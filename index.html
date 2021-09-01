@@ -12,16 +12,32 @@
     <div class="container">
          <div class="bg-header">
               <h2 id="title">Shopping</h2>
+              <i id="menu2" class="material-icons-outlined"><a href="#menu1">menu</a></i>
               <form action="" method="get">
                   <h2 id="title">Shopping</h2>
+                  
                   <input type="text"placeholder="Search items or store" name="" id="">
                   <button type="submit"><i class="material-icons-outlined">search</i></button>
                   <span class="material-icons-outlined">shopping_cart</span>
-                  <a href=""ng-click="my()">Signup</a>
-                  <a href=""ng-click="myFunc()">Signin</a>
+                  
+                    <a href=""ng-click="my()">Signup</a>
+                    <a href=""ng-click="myFunc()">Signin</a>
+                 
               </form>
               
          </div>
+         <div class="hide">
+         <div class="lightbox" id="menu1">
+            <a href="#"class="close">Close</a>
+            <div ng-show="show">
+            <h3>Pending to develop ⚠</h3>
+           </div>
+           <div class="content">
+             <a href=""ng-click="my()">Signup</a><br><br>
+             <a href=""ng-click="myFunc()">Signin</a>
+           </div>
+           </div>
+        </div>
          <div ng-show="show">
              <h1 style="color: #373A36;position: absolute;margin-left: 40%;margin-top: 10%;">Pending to develop ⚠ </h1>
          </div>
@@ -43,7 +59,7 @@
     
                  </div>
                 
-                    <input type="checkbox">
+                    <input id="check"type="checkbox">
                     <label for=""style="margin-left:-17%">I agree to the terms and conditions.</label>
                     
                 
