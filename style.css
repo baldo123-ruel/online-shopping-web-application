@@ -7,8 +7,137 @@
 }
 @media only screen and (min-width: 300px){
  /*under constraction*/
+ .login a{
+     display: none;
+ }
+ #check{
+     display: none;
+ }
+ .login label{
+     display: none;
+ }
+ .form1{
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 12.6666%;
+    height: auto;
+    width: 80%;  
+    padding: 10px;   
+    box-shadow: 5px 10px 8px #888888;   
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #E6E2DD;
+    
+}
+.from-group{
+    position: relative;
+    line-height: 4.6em;
+}
+.from-group input{
+    width: 80%;
+    
+    padding: 10px;
+    border: #D48166 solid 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    margin-left: 10%;
+}
+.from-group input:hover{
+    width: 80%;
+    padding: 15px;
+    background-color: #373A36;
+    color: #E6E2DD;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.form1 h3{
+    margin-left:9% ;
+    padding-top: 30px;
+}
+
+.from-group button{
+    padding: 15px;
+    width: 80%;
+    background-color: #D48166;
+    margin-left: 10%;
+    color: #E6E2DD;
+    font-weight: 800;
+    font-family: Montserrat;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+}
+.from-group button:hover{
+    background-color: #373A36;
+    color: #E6E2DD;
+}
 .login{
+    
+}
+#menu2{
+    position: absolute;
+    margin-top: 4%;
+}
+#menu2:hover > a{
+    
+    color: #373A36;
+    
+}
+form a{
     display: none;
+}
+#menu2 a{
+    text-decoration: none;
+    color: #E6E2DD;
+}
+.lightbox{
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transition-duration: 2s;
+    background-color: #373A36;
+}
+.lightbox:target{
+    visibility: visible;
+    transition-duration: 2;
+    left: 0;
+    
+}
+.content{
+    position: absolute;
+    margin-top: 50%;
+    margin-left:30%;
+
+}
+.lightbox h3{
+    color: #E6E2DD;
+}
+.close{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 5%;
+    border-radius: 10px;
+    color: #E6E2DD;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px #E6E2DD solid;
+}
+.content a:hover{
+    background-color: #373A36;
+    color: #E6E2DD;
+    border: #E6E2DD solid 1px;
+}
+.content a{
+    text-decoration: none;
+    color: #E6E2DD;
+    background-color: #D48166;
+    text-align: center;
+    padding: 10px;
+    line-height: 2.6em;
+    width: 60%;
+    border-radius: 5px;
+    
 }
 .slideanim{
     background-color: #373A36;
@@ -131,9 +260,7 @@ body{
     font-family: Montserrat;
     padding: 10px;
 }
-form a{
-    display: none;
-}
+
 form{
     display: flex;
     position: relative;
@@ -253,10 +380,17 @@ a#home{
 
 }
 @media only screen  and (min-width: 992px){
-    .login{
+     .login{
         display: block;
         width: 10%;
         
+    }
+    #menu2{
+        display: none;
+    }
+    .hide
+    {
+        display: none;
     }
     .form1{
         position: absolute;
