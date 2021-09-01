@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HOME</title>
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myCtrl" >
     <div class="container">
          <div class="bg-header">
               <h2 id="title">Shopping</h2>
@@ -17,10 +17,47 @@
                   <input type="text"placeholder="Search items or store" name="" id="">
                   <button type="submit"><i class="material-icons-outlined">search</i></button>
                   <span class="material-icons-outlined">shopping_cart</span>
-                  <a href="">Signup</a>
-                  <a href="login.html">Signin</a>
+                  <a href=""ng-click="my()">Signup</a>
+                  <a href=""ng-click="myFunc()">Signin</a>
               </form>
+              
          </div>
+         <div ng-show="show">
+             <h1 style="color: #373A36;position: absolute;margin-left: 40%;margin-top: 10%;">Pending to develop ⚠ </h1>
+         </div>
+         <div class="login"ng-show="showMe">
+             
+            <form class="form1"action="" method="post">
+                
+                 <h3>SHOPPING-LOGIN</h3>
+                <div class="from-group">
+                 <input type="email" placeholder="Enter Emailaddress" id="">
+                </div>
+                <div class="from-group">
+                  <input type="password" placeholder="Enter Password" id="">
+                 </div>
+                 
+                 <div class="from-group">
+                    
+                  <button type="submit">LOGIN</button><br>
+    
+                 </div>
+                
+                    <input type="checkbox">
+                    <label for=""style="margin-left:-17%">I agree to the terms and conditions.</label>
+                    
+                
+                 
+            </form>
+            <a href=""style="
+            position: absolute;text-decoration:none;
+            margin-left:55%;
+            margin-top:30%;
+            
+            "><p style="color: #373A36">Forget password?</p></a>
+            
+        </div>
+        
           
                <div class="imgani">
                     
@@ -119,22 +156,18 @@
          </footer>
     </div>
     <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-             var i;
-             var x = document.getElementsByClassName("mySlides");
-             for (i = 0; i < x.length; i++){
-                 x[i].style.display = "none";
-             }
-             myIndex++;
-             if (myIndex > x.length) {
-                 myIndex = 1
-             }
-             x[myIndex-1].style.display = "block";
-             setTimeout(carousel,3000);
-        }
-    </script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.showMe = false;
+            $scope.myFunc = function() {
+                $scope.showMe = !$scope.showMe;
+            }
+            $scope.show = false;
+            $scope.my = function() {
+                $scope.show = !$scope.show;
+            }
+           
+        });
+        </script>
 </body>
 </html>
