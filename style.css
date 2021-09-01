@@ -6,8 +6,10 @@
     padding: 0%;
 }
 @media only screen and (min-width: 480px){
- 
-
+ /*under constraction*/
+.login{
+    display: none;
+}
 .slideanim{
     background-color: #373A36;
     padding: px;
@@ -251,6 +253,65 @@ a#home{
 
 }
 @media only screen  and (min-width: 992px){
+    .login{
+        display: block;
+        width: 10%;
+        
+    }
+    .form1{
+        position: absolute;
+        margin-left: 34.66%;
+        margin-top: 12.6666%;
+        height: auto;
+        width: 36.44%;  
+        padding: 30px;   
+        box-shadow: 5px 10px 8px #888888;   
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #E6E2DD;
+        
+    }
+    .from-group{
+        position: relative;
+        line-height: 4.6em;
+    }
+    .from-group input{
+        width: 80%;
+        
+        padding: 10px;
+        border: #D48166 solid 1px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius:5px ;
+        margin-left: 10%;
+    }
+    .from-group input:hover{
+        width: 80%;
+        padding: 15px;
+        background-color: #373A36;
+        color: #E6E2DD;
+        box-shadow: 5px 10px 8px #888888;
+    }
+    
+    .form1 h3{
+        margin-left:28% ;
+        padding-bottom: 30px;
+    }
+   
+    .from-group button{
+        padding: 15px;
+        width: 80%;
+        background-color: #D48166;
+        margin-left: 10%;
+        color: #E6E2DD;
+        font-weight: 800;
+        font-family: Montserrat;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius:5px ;
+    }
+    .from-group button:hover{
+        background-color: #373A36;
+        color: #E6E2DD;
+    }
     
     body{
         background-color: #faf4ec;
@@ -414,6 +475,6 @@ a#home{
         color: #E6E2DD;
         margin-left: 10%;
     }
-
+   
     
 }
